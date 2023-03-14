@@ -2,31 +2,54 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 ::after,
 ::before {
   box-sizing: inherit;
 }
 
-body {
-  font: 16px/1.5 sans-serif;
-}
+
+
+
+
+
 
 .sloupec {
   padding: 30px;
   font-size: 24px;
   text-align: center;
   color: #fff;
+  flex-grow: 1;
+
+}
+
+
+body {
+
+  font: 16px/1.5 sans-serif;
+}
+
+@media (min-width: 800px) {
+
+  .kontejner {
+    display: flex;
+    flex-basis: 33.3%;
+  }
 }
 
 .sloupec:nth-child(1) {
   background-color: #3498db;
 }
+
 .sloupec:nth-child(2) {
   background-color: #e74c3c;
+
 }
+
 .sloupec:nth-child(3) {
   background-color: #2ecc71;
+
 }
 
 /*
